@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+    <title>Contact Us</title>
+
+    <style>
+        body {
+
+            font-family: Arial;
+
+            margin: 0;
+
+            text-align: center;
+
+            background: #91cef1;
+
+        }
+
+        nav {
+
+            background: #1fa3e0;
+
+            padding: 10px;
+
+        }
+
+        nav a {
+
+            color: white;
+
+            margin: 15px;
+
+            text-decoration: none;
+
+        }
+
+        nav a:hover {
+
+            background: rgb(20, 142, 223);
+
+            padding: 5px;
+
+        }
+
+        section {
+
+            padding: 40px;
+
+        }
+
+        input,
+
+        textarea {
+
+            padding: 10px;
+
+            margin: 10px;
+
+            width: 250px;
+
+            border-radius: 5px;
+
+            border: 1px solid rgb(14, 13, 13);
+
+        }
+
+        button {
+
+            padding: 10px;
+
+            background: rgb(63, 150, 209);
+
+            color: rgb(0, 0, 0);
+
+            border: none;
+
+            border-radius: 5px;
+
+        }
+    </style>
+
+</head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            
+        </nav>
+    
+        <section>
+            <h1><img src="images (5).jpeg" alt="" width="250" height="100"></h1>
+
+
+            <input type="text" placeholder="Your Name"><br>
+
+
+            <input type="email" placeholder="Your Email"><br>
+
+
+            <input type="number" placeholder="Your Age"><br>
+
+
+            <textarea placeholder="Your Message"></textarea><br>
+
+    
+            <button onclick="send()">Submit</button>
+    
+            <p id="msg"></p>
+        </section>
+    
+        <script>
+            function send() {
+                document.getElementById("msg").innerHTML = "Your message has been sent!";
+            }
+        </script>
+</html>
